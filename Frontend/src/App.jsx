@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import HomePage from "./Pages/HomePage";
-import SignupPage from "./Pages/signupPage";
+import SignUpPage from "./Pages/SignUpPage.jsx";
 import LoginPage from "./Pages/LoginPage";
 import SettingPage from "./Pages/SettingPage";
 import ProfilePage from "./Pages/ProfilePage.jsx";
@@ -43,7 +43,7 @@ function App() {
             path="/"
             element={authUser ? <HomePage /> : <Navigate to="/login" />}
           />
-          <Route path="/signup" element={<SignupPage />} />
+          <Route path="/signup" element={<SignUpPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route
             path="/settings"
