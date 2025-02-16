@@ -4,7 +4,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import HomePage from "./Pages/HomePage";
 import LoginPage from "./Pages/LoginPage";
-import SignUpPage from "./Pages/SignUpPage";
+import SignUpPage from "./Pages/signupPage.jsx";
 import SettingPage from "./Pages/SettingPage";
 import ProfilePage from "./Pages/ProfilePage.jsx";
 import { useAuthStore } from "./store/useAuthStore.js";
