@@ -35,10 +35,6 @@ function App() {
       <div data-theme={theme}>
         <Navbar />
         <Routes>
-          {/* <Route
-            path="/"
-            element={ <HomePage /> }
-          /> */}
           <Route
             path="/"
             element={authUser ? <HomePage /> : <Navigate to="/login" />}
