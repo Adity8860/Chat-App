@@ -4,13 +4,14 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import HomePage from "./Pages/HomePage";
 import LoginPage from "./Pages/LoginPage";
+import SignUpPage from "./Pages/SignUpPage.jsx";
 import SettingPage from "./Pages/SettingPage";
 import ProfilePage from "./Pages/ProfilePage.jsx";
 import { useAuthStore } from "./store/useAuthStore.js";
 import { useThemeStore } from "./store/useThemeStore.js";
 import { Loader } from "lucide-react";
 import { Toaster } from "react-hot-toast";
-import SignUpPage from "./Pages/signupPage.jsx";
+ 
 
 function App() {
   const { checkAuth, authUser, isCheckingAuth,onlineUsers } = useAuthStore();
